@@ -44,6 +44,10 @@ int main(void)
 		{
 			delay(); //account for debouncing
 			GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_12, ENABLE);
+		}else
+		{
+			delay(); //account for debouncing
+			GPIO_WriteToOutputPin(GPIOD, GPIO_PIN_12, DISABLE);
 		}
 	}
 
